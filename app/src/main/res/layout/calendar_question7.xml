@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_ghost">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7/10"
+        android:textColor="#fff"
+
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            tools:context="com.khutso.quizapp11.MainActivity">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Question 7"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text=" How many days are there in x weeks x days?"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+
+            <RadioGroup
+                android:id="@+id/rggroup"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:textColor="#fff">
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CalenderQ7"
+                    android:text="6x"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CalenderQ7"
+                    android:text="8x"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CalenderQ7"
+                    android:text="7x"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="CalenderQ7"
+                    android:text="5x"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+android:background="@drawable/borderssss"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:onClick="NextToCalQ8"
+                android:text="next question" />
+
+            <Button
+                android:id="@+id/showAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:textColor="#fff"
+android:background="@drawable/borderssss"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="5dp"
+                android:onClick="AnswerCalendQ7"
+                android:text="show answer" />
+
+            <TextView
+                android:id="@+id/txt_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

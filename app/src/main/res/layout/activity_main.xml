@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khutso.quizapp11.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Quiz Categories" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="essentialPart"
+        android:text="Essential Part" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="NumberSeries"
+        android:layout_weight="1"
+        android:text="Number series" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="Calendar"
+        android:layout_weight="1"
+        android:text="Calendar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="verbal_classification"
+        android:layout_weight="1"
+        android:text="verbal classification" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="testing"
+        android:onClick="call_new_Man"/>
+
+</LinearLayout>

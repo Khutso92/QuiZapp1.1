@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_ghost">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4/10"
+        android:textColor="#fff"
+
+        android:textStyle="bold"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            tools:context="com.khutso.quizapp11.MainActivity">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Question 4"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text=" Choose the word that is essential for :GUITAR"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+
+            <RadioGroup
+                android:id="@+id/rggroup"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:textColor="#fff">
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="EPQ4"
+                    android:text="band"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="EPQ4"
+                    android:text="teacher"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="EPQ4"
+                    android:text="songs"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/numberSeriesQ1_incorrect3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="EPQ4"
+                    android:text="strings"
+                    android:textColor="#fff"
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textSize="30sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:onClick="NextToEPQ5"
+                android:textColor="#fff"
+android:background="@drawable/borderssss"
+                android:text="next question" />
+
+            <Button
+                android:id="@+id/showAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="5dp"
+                android:onClick="AnswerEPQ4"
+                android:textColor="#fff"
+android:background="@drawable/borderssss"
+                android:text="show answer" />
+
+            <TextView
+                android:id="@+id/txt_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="state"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
